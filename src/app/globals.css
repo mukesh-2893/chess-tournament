@@ -1,0 +1,305 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.badge.live {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.upcoming {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.joinButton {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.joinButton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.filterBar {
+  margin-bottom: 1.5rem;
+}
+
+.filterLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.filterSelect {
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.stateMessage {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: #1e1e1e;
+  color: #e5e5e5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  color: #f5f5f5;
+}
+
+/* SECTION HEADER */
+.sectionHeader {
+  margin-top: 32px;
+  padding: 10px 16px;
+  background: linear-gradient(to right, #2a2a2a, #1f1f1f);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* TOURNAMENT ROW */
+.tournamentRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  border-bottom: 1px solid #2a2a2a;
+  transition: background 0.2s ease;
+}
+
+.tournamentRow:hover {
+  background: #2a2a2a;
+}
+
+.leftBlock {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #c49a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.subText {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.middleBlock {
+  text-align: left;
+  min-width: 180px;
+}
+
+.rightBlock {
+  text-align: right;
+  min-width: 120px;
+}
+
+.metaText {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.playersCount {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #c49a3a;
+}
+
+.joinButton {
+  margin-left: 20px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid #c49a3a;
+  background: transparent;
+  color: #c49a3a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.joinButton:hover {
+  background: #c49a3a;
+  color: #1e1e1e;
+}
+
+.joinButton:disabled {
+  border-color: #555;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.filterContainer {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.filterLabel {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-bottom: 6px;
+}
+
+.filterSelect {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #3a3a3a;
+  background: #2a2a2a;
+  color: #e5e5e5;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: #c49a3a;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modalContent h3 {
+  margin-top: 0;
+  color: #c49a3a;
+}
+
+.modalContent p {
+  margin: 16px 0;
+  color: #e5e5e5;
+}
+
+.modalButton {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #c49a3a;
+  color: #1e1e1e;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tournamentRow {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .rightBlock {
+    text-align: left;
+  }
+}
