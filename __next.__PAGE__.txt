@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[42152,["/chess-tournament/_next/static/chunks/6e0318ca9d9f6c02.js"],"default"]
+3:I[97367,["/chess-tournament/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"_vWz-RsDlVXT5ve8E4WnB","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"container","children":[["$","h1",null,{"className":"title","children":"Chess Tournaments"}],["$","$L2",null,{}]]}],[["$","script","script-0",{"src":"/chess-tournament/_next/static/chunks/6e0318ca9d9f6c02.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
