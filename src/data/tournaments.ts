@@ -1,6 +1,6 @@
 import { Tournament } from "@/types/tournament";
 
-export const tournaments: Tournament[] = [
+export const tournamentsList: Tournament[] = [
   {
     id: "t1",
     name: "Weekend Blitz Arena",

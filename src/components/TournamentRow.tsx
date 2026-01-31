@@ -17,7 +17,16 @@ export default function TournamentRow({
 }: Props) {
   const isFull = tournament.playersJoined >= tournament.maxPlayers;
 
-  const formattedDate = new Date(tournament.startTime).toLocaleString();
+  const formattedDate = new Date(tournament.startTime).toLocaleString("en-IN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "UTC",
+  });
 
   const handleClick = () => {
     if (isJoined) {
