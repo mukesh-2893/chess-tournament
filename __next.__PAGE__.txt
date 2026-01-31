@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[42152,["/chess-tournament/_next/static/chunks/cc4c270667ff0223.js"],"default"]
+2:I[42152,["/chess-tournament/_next/static/chunks/40e151c1e1a605ac.js"],"default"]
 3:I[97367,["/chess-tournament/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"tO6p4jTWjzC4kb5fLYMuB","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"container","children":[["$","h1",null,{"className":"title","children":"Chess Tournaments"}],["$","$L2",null,{}]]}],[["$","script","script-0",{"src":"/chess-tournament/_next/static/chunks/cc4c270667ff0223.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"q3tDhiSNaUT171BnTxe9W","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"container","children":[["$","h1",null,{"className":"title","children":"Chess Tournaments"}],["$","$L2",null,{}]]}],[["$","script","script-0",{"src":"/chess-tournament/_next/static/chunks/40e151c1e1a605ac.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null
