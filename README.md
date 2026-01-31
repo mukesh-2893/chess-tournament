@@ -73,9 +73,9 @@ State is intentionally minimal and structured.
 
 ### How to Run Locally
 
-npm install
-npm run dev
+
 
 ```
-
+npm install
+npm run dev
 ```
