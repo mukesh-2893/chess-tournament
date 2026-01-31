@@ -8,17 +8,17 @@ import Modal from "./Modal";
 import { tournamentsList } from "@/data/tournaments";
 
 export default function TournamentList() {
-  const [tournaments, setTournaments] = useState<Tournament[]>([]);
+  const [tournaments, setTournaments] = useState<Tournament[]>(tournamentsList);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState("all");
   const [joined, setJoined] = useState<Set<string>>(new Set());
   const [modalMessage, setModalMessage] = useState("");
 
-  useEffect(() => {
-    // tournament data is static in data file so we can directly lod it aswell but i use useeffect for this
-    setTournaments(tournamentsList);
-    setLoading(false);
-  }, []);
+  // useEffect(() => {
+  //   // tournament data is static in data file so we can directly lod it aswell but i use useeffect for this
+  //   setTournaments(tournamentsList);
+  //   setLoading(false);
+  // }, []);
 
   const handleJoin = (id: string) => {
     setTournaments((prev) =>
